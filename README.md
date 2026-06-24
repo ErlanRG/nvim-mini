@@ -13,3 +13,4 @@ Minimal Neovim configuration.
 - [oil.nvim](https://github.com/stevearc/oil.nvim) — file explorer
 - [snacks.nvim](https://github.com/folke/snacks.nvim) — QoL plugins
 - [mini.nvim](https://github.com/nvim-mini/mini.nvim) — QoL plugins
+- [whichkey](https://github.com/folke/which-key.nvim) — keybindings popup
