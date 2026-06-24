@@ -26,16 +26,16 @@ map('i', 'jk', '<Esc>', { desc = 'Quick <Esc>' })
 map('n', '<leader>bw', '<cmd>update<CR>', { desc = '[B]uffer [S]ave' })
 
 -- better indenting
-map('v', '<', '<gv')
-map('v', '>', '>gv')
+map('v', '<', '<gv', { desc = 'Indent Left' })
+map('v', '>', '>gv', { desc = 'Indent Right' })
 
 -- commenting
 map('n', 'gco', 'o<esc>Vcx<esc><cmd>normal gcc<cr>fxa<bs>', { desc = 'Add Comment Below' })
 map('n', 'gcO', 'O<esc>Vcx<esc><cmd>normal gcc<cr>fxa<bs>', { desc = 'Add Comment Above' })
 
 -- Center scrolling
-map('n', '<C-d>', '<C-d>zz')
-map('n', '<C-u>', '<C-u>zz')
+map('n', '<C-d>', '<C-d>zz', { desc = 'Scroll Down and Center' })
+map('n', '<C-u>', '<C-u>zz', { desc = 'Scroll Up and Center' })
 
 -- lazy
 map('n', '<leader>ol', '<cmd>Lazy<cr>', { desc = '[O]pen [L]azy' })
@@ -57,8 +57,7 @@ map('n', '<leader>wv', '<C-W>v', { desc = 'Split [V]ertically Right' })
 map('n', '<leader>w|', '<C-W>|', { desc = 'Maximize Width' })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
---  See `:help hlsearch`
-map('n', '<Esc>', '<cmd>nohlsearch<CR>')
+map('n', '<Esc>', '<cmd>nohlsearch<CR>', { desc = 'Clear Search Highlights' })
 
 -- Diagnostic keymaps
 map('n', '<leader>oq', vim.diagnostic.setloclist, { desc = '[O]pen diagnostic [Q]uickfix list' })
