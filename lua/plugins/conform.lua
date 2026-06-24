@@ -1,6 +1,6 @@
 return {
 	"stevearc/conform.nvim",
-	lazy = false,
+	event = "VeryLazy",
 	opts = {
 		format_on_save = {
 			timeout_ms = 500,
